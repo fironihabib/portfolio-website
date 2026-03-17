@@ -2547,6 +2547,7 @@ html {
   .portfolio-grid {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 1rem;
     overflow-x: auto;
     overflow-y: hidden;
@@ -2566,7 +2567,7 @@ html {
     width: 300px;
     min-width: 300px;
     flex-shrink: 0;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
   }
 
   .card-image-wrapper {
