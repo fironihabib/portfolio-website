@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fironi Habibzade - Portfolio</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=K2D:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Page Load Loading Screen -->
+    <div class="page-loading-screen" id="page-loading-screen">
+      <div class="page-loading-content">
+        <div class="page-loading-logo">
+          <img src="images/logo.png" alt="Logo" class="loading-logo-image" />
+        </div>
+        <div class="page-loading-spinner"></div>
+        <div class="page-loading-text">Loading Portfolio...</div>
+        <div class="page-loading-progress">
+          <div class="page-loading-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Transition Overlay -->
+    <div class="slide-overlay" id="slide-overlay">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading</div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="profile-elements-container">
+        <!-- Sparkle Elements -->
+        <div class="sparkle-container">
+          <img
+            src="images/ulduz.png"
+            alt="Star"
+            class="sparkle sparkle-1"
+            style="--initial-rotate: 15deg; --final-rotate: 5deg"
+          />
+          <img
+            src="images/ulduz.png"
+            alt="Star"
+            class="sparkle sparkle-2"
+            style="--initial-rotate: -10deg; --final-rotate: 0deg"
+          />
+          <img
+            src="images/ulduz.png"
+            alt="Star"
+            class="sparkle sparkle-3"
+            style="--initial-rotate: 5deg; --final-rotate: -5deg"
+          />
+          <img
+            src="images/ulduz.png"
+            alt="Star"
+            class="sparkle sparkle-4"
+            style="--initial-rotate: -15deg; --final-rotate: -10deg"
+          />
+        </div>
+
+        <!-- Profile Image -->
+        <div class="profile-image-wrapper">
+          <img
+            src="images/byavni1.png"
+            alt="Fironi Habibzade"
+            class="profile-image"
+          />
+        </div>
+
+        <!-- Welcome Text -->
+        <div class="welcome-text">
+          <span id="typewriter-text"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <!-- Click Here Button -->
+        <a href="#" class="portfolio-button" id="go-to-home">
+          <span>Click Here</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Home Page -->
+    <section class="home-page">
+      <!-- Header Navigation -->
+      <header class="home-header">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image" />
+          </div>
+          <nav class="main-nav">
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="about">About me</a>
+            <a href="#" class="nav-link" data-page="work">Work</a>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+          </nav>
+          <div class="language-selector">
+            <div class="language-dropdown">
+              <div class="selected-language">
+                <img
+                  src="https://flagcdn.com/w20/gb.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                <span class="language-text">EN</span>
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+              </div>
+              <div class="language-options">
+                <div class="language-option" data-lang="en">
+                  <img
+                    src="https://flagcdn.com/w20/gb.png"
+                    alt="English"
+                    class="flag-icon"
+                  />
+                  <span>English</span>
+                </div>
+                <div class="language-option" data-lang="az">
+                  <img
+                    src="https://flagcdn.com/w20/az.png"
+                    alt="Azerbaycan"
+                    class="flag-icon"
+                  />
+                  <span>Azərbaycan</span>
+                </div>
+                <div class="language-option" data-lang="tr">
+                  <img
+                    src="https://flagcdn.com/w20/tr.png"
+                    alt="Türkçe"
+                    class="flag-icon"
+                  />
+                  <span>Türkçe</span>
+                </div>
+                <div class="language-option" data-lang="ru">
+                  <img
+                    src="https://flagcdn.com/w20/ru.png"
+                    alt="Русский"
+                    class="flag-icon"
+                  />
+                  <span>Русский</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Home Content -->
+      <div class="home-content">
+        <div class="home-left">
+          <div class="intro-text">
+            <span class="greeting">Hello, I'm</span>
+            <h1 class="name">Fironi<br />Habibzade</h1>
+            <button class="download-cv-btn">
+              <i class="fas fa-download"></i>
+              Download CV
+            </button>
+          </div>
+        </div>
+
+        <div class="home-right">
+          <div class="profile-section">
+            <div class="profile-image-container">
+              <img
+                src="images/byavni2.png"
+                alt="Fironi Habibzade"
+                class="home-profile-image"
+              />
+
+              <!-- Social Media Icons -->
+              <div class="social-icons-container">
+                <a
+                  href="https://github.com/fironihabib"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                >
+                  <i class="fab fa-github"></i>
+                  <div class="social-tooltip">fironihabib</div>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/fironi-habibzade-575283263/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <div class="social-tooltip">Fironi Habibzade</div>
+                </a>
+                <a
+                  href="https://www.facebook.com/fironi.habibzade/?locale=tr_TR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                >
+                  <i class="fab fa-facebook"></i>
+                  <div class="social-tooltip">Fironi Habibzade</div>
+                </a>
+                <a
+                  href="https://www.instagram.com/codingwithfiro?igsh=czNqajB2bnFhNWF6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                >
+                  <i class="fab fa-instagram"></i>
+                  <div class="social-tooltip">@codingwithfiro</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="next-section" class="about-page">
+      <!-- Header Navigation -->
+      <header class="about-header">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image" />
+          </div>
+          <nav class="main-nav">
+            <a href="#" class="nav-link" data-page="home">Home</a>
+            <a href="#" class="nav-link active" data-page="about">About me</a>
+            <a href="#" class="nav-link" data-page="work">Work</a>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+          </nav>
+          <div class="language-selector">
+            <div class="language-dropdown">
+              <div class="selected-language">
+                <img
+                  src="https://flagcdn.com/w20/gb.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                <span class="language-text">EN</span>
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+              </div>
+              <div class="language-options">
+                <div class="language-option" data-lang="en">
+                  <img
+                    src="https://flagcdn.com/w20/gb.png"
+                    alt="English"
+                    class="flag-icon"
+                  />
+                  <span>English</span>
+                </div>
+                <div class="language-option" data-lang="az">
+                  <img
+                    src="https://flagcdn.com/w20/az.png"
+                    alt="Azerbaycan"
+                    class="flag-icon"
+                  />
+                  <span>Azərbaycan</span>
+                </div>
+                <div class="language-option" data-lang="tr">
+                  <img
+                    src="https://flagcdn.com/w20/tr.png"
+                    alt="Türkçe"
+                    class="flag-icon"
+                  />
+                  <span>Türkçe</span>
+                </div>
+                <div class="language-option" data-lang="ru">
+                  <img
+                    src="https://flagcdn.com/w20/ru.png"
+                    alt="Русский"
+                    class="flag-icon"
+                  />
+                  <span>Русский</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- About Me Content -->
+      <div class="about-me-content">
+        <h1 class="about-title">About Me</h1>
+
+        <div class="about-main">
+          <!-- Character Image with Background -->
+          <div class="character-section">
+            <div class="character-background">
+              <img
+                src="images/Ellipse 362.png"
+                alt="Background"
+                class="character-bg"
+              />
+              <img
+                src="images/byavni3.png"
+                alt="Fironi Habibzade"
+                class="character-image"
+              />
+            </div>
+          </div>
+
+          <!-- About Text Content -->
+          <div class="about-text-section">
+            <div class="about-description">
+              <p>
+                <span class="first-sentence"
+                  >Hello! I am a Full Stack Programmer with a strong passion for
+                  Startup business and building digital solutions.</span
+                >
+                <span class="other-sentences">
+                  I work in multiple technology stacks including C, Python,
+                  .Net, React, Flutter, etc. - delivering applications with
+                  clean and scalable architectures. In addition to my personal
+                  development, I am the founder of a startup project called
+                  MyHomeTeck - a rental tracking and management system that is
+                  currently in development and will be launched in the Turkish
+                  market to modernize property management. In this technological
+                  journey, I am constantly developing myself as a leader,
+                  entrepreneur and programmer. At the same time, I strive to
+                  turn real problems into creative and technology-based
+                  solutions. I approach each project with a focus on innovation,
+                  simplicity and real impact. In short, for me, coding is just a
+                  tool - the most important thing is to implement my
+                  ideas!</span
+                >
+              </p>
+            </div>
+
+            <!-- Technical Skills Section -->
+            <div class="skills-section">
+              <h3 class="skills-title">Technical Skills</h3>
+              <div class="skills-container">
+                <div class="skills-scroll">
+                  <div class="skill-item">React</div>
+                  <div class="skill-item">React Native</div>
+                  <div class="skill-item">Flutter</div>
+                  <div class="skill-item">Tailwind CSS</div>
+                  <div class="skill-item">TypeScript</div>
+                  <div class="skill-item">Node.js</div>
+                  <div class="skill-item">JavaScript</div>
+                  <div class="skill-item">FastAPI</div>
+                  <div class="skill-item">Python</div>
+                  <div class="skill-item">C</div>
+                  <div class="skill-item">CI/CD</div>
+                  <div class="skill-item">C# (.NET)</div>
+                  <div class="skill-item">RESTful API</div>
+                  <div class="skill-item">PostgreSQL</div>
+                  <div class="skill-item">MS SQL</div>
+                  <div class="skill-item">Redis</div>
+                  <div class="skill-item">Docker</div>
+                  <div class="skill-item">Haproxy</div>
+                  <div class="skill-item">Nginx</div>
+                  <div class="skill-item">Git</div>
+                  <div class="skill-item">GitHub</div>
+                  <div class="skill-item">HTML</div>
+                  <div class="skill-item">CSS</div>
+                  <div class="skill-item">Express.js</div>
+                  <div class="skill-item">Vercel</div>
+                  <div class="skill-item">Ubuntu Linux</div>
+                  <div class="skill-item">Kali Linux</div>
+                  <div class="skill-item">Visual Studio Code</div>
+                  <div class="skill-item">Visual Studio 2022</div>
+                  <div class="skill-item">Figma</div>
+                  <div class="skill-item">Trello</div>
+                  <div class="skill-item">IntelliJ IDEA</div>
+                  <div class="skill-item">Oracle VM Virtualbox</div>
+                  <div class="skill-item">VMware Workstation Pro</div>
+                  <div class="skill-item">Microsoft Office</div>
+                  <!-- Duplicate for seamless loop -->
+                  <div class="skill-item">React</div>
+                  <div class="skill-item">React Native</div>
+                  <div class="skill-item">Flutter</div>
+                  <div class="skill-item">Tailwind CSS</div>
+                  <div class="skill-item">TypeScript</div>
+                  <div class="skill-item">Node.js</div>
+                  <div class="skill-item">JavaScript</div>
+                  <div class="skill-item">FastAPI</div>
+                  <div class="skill-item">Python</div>
+                  <div class="skill-item">C</div>
+                  <div class="skill-item">CI/CD</div>
+                  <div class="skill-item">C# (.NET)</div>
+                  <div class="skill-item">RESTful API</div>
+                  <div class="skill-item">PostgreSQL</div>
+                  <div class="skill-item">MS SQL</div>
+                  <div class="skill-item">Redis</div>
+                  <div class="skill-item">Docker</div>
+                  <div class="skill-item">Haproxy</div>
+                  <div class="skill-item">Nginx</div>
+                  <div class="skill-item">Git</div>
+                  <div class="skill-item">GitHub</div>
+                  <div class="skill-item">HTML</div>
+                  <div class="skill-item">CSS</div>
+                  <div class="skill-item">Express.js</div>
+                  <div class="skill-item">Vercel</div>
+                  <div class="skill-item">Ubuntu Linux</div>
+                  <div class="skill-item">Kali Linux</div>
+                  <div class="skill-item">Visual Studio Code</div>
+                  <div class="skill-item">Visual Studio 2022</div>
+                  <div class="skill-item">Figma</div>
+                  <div class="skill-item">Trello</div>
+                  <div class="skill-item">IntelliJ IDEA</div>
+                  <div class="skill-item">Oracle VM Virtualbox</div>
+                  <div class="skill-item">VMware Workstation Pro</div>
+                  <div class="skill-item">Microsoft Office</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Page -->
+    <section class="work-page">
+      <!-- Header Navigation -->
+      <header class="work-header">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image" />
+          </div>
+          <nav class="main-nav">
+            <a href="#" class="nav-link" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="about">About me</a>
+            <a href="#" class="nav-link active" data-page="work">Work</a>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+          </nav>
+          <div class="language-selector">
+            <div class="language-dropdown">
+              <div class="selected-language">
+                <img
+                  src="https://flagcdn.com/w20/gb.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                <span class="language-text">EN</span>
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+              </div>
+              <div class="language-options">
+                <div class="language-option" data-lang="en">
+                  <img
+                    src="https://flagcdn.com/w20/gb.png"
+                    alt="English"
+                    class="flag-icon"
+                  />
+                  <span>English</span>
+                </div>
+                <div class="language-option" data-lang="az">
+                  <img
+                    src="https://flagcdn.com/w20/az.png"
+                    alt="Azerbaycan"
+                    class="flag-icon"
+                  />
+                  <span>Azərbaycan</span>
+                </div>
+                <div class="language-option" data-lang="tr">
+                  <img
+                    src="https://flagcdn.com/w20/tr.png"
+                    alt="Türkçe"
+                    class="flag-icon"
+                  />
+                  <span>Türkçe</span>
+                </div>
+                <div class="language-option" data-lang="ru">
+                  <img
+                    src="https://flagcdn.com/w20/ru.png"
+                    alt="Русский"
+                    class="flag-icon"
+                  />
+                  <span>Русский</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Work Content -->
+      <div class="work-content">
+        <h1 class="work-title">Work</h1>
+        <p class="work-subtitle">Here are some of my recent projects</p>
+
+        <!-- Portfolio Cards Grid -->
+        <div class="scroll-hint" id="scrollHint">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Project 1 - CommunityDevs -->
+          <div
+            class="project-card-modern"
+            onclick="window.open('https://website-communitydevs.vercel.app/', '_blank')"
+          >
+            <div class="card-image-wrapper">
+              <img
+                src="images/communitdevs.JPG"
+                alt="CommunityDevs Website"
+              />
+              <div class="card-image-overlay"></div>
+              <div class="card-status">
+                <span class="status-badge status-completed" data-translate="work.completed">Completed</span>
+                <span class="card-year">2026</span>
+              </div>
+              <div class="card-hover-action">
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="work.visitWebsite">Visit Website</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">CommunityDevs</h3>
+              <p class="card-description" data-translate="work.communitydevsDesc">CommunityDevs is a dynamic ecosystem for young tech and creative talent. We bridge the gap between learning and industry through expert bootcamps, career mentorship, and collaborative projects. From building web and mobile solutions to sharing essential resources, we provide the tools young innovators need to thrive in their careers.</p>
+              <div class="card-technologies">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Vite</span>
+                <span>Tailwind CSS</span>
+                <span>Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 - My Portfolio -->
+          <div
+            class="project-card-modern"
+            onclick="window.open('https://www.fironihabib.bio', '_blank')"
+          >
+            <div class="card-image-wrapper">
+              <img src="images/logo.png" alt="My Portfolio Website" class="contain-image" />
+              <div class="card-image-overlay"></div>
+              <div class="card-status">
+                <span class="status-badge status-completed" data-translate="work.completed">Completed</span>
+                <span class="card-year">2025</span>
+              </div>
+              <div class="card-hover-action">
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="work.visitWebsite">Visit Website</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">My Portfolio Website</h3>
+              <p class="card-description" data-translate="work.portfolioDesc">Personal portfolio & showcase</p>
+              <div class="card-technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Netlify</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 - Collabify.ai -->
+          <div
+            class="project-card-modern"
+            onclick="window.open('https://restaurant-rimberio.vercel.app/', '_blank')"
+          >
+            <div class="card-image-wrapper">
+              <img
+                src="images/c0.PNG"
+                alt="Collabify.ai"
+                class="contain-image"
+              />
+              <div class="card-image-overlay"></div>
+              <div class="card-status">
+                <span class="status-badge status-closed" data-translate="work.closed">Closed</span>
+                <span class="card-year">2024</span>
+              </div>
+              <div class="card-hover-action">
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="work.visitWebsite">Visit Website</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Collabify.ai</h3>
+              <p class="card-description" data-translate="work.collabifyDesc">This project was originally developed as a full-stack application in 2024 in collaboration with the Collabify team. As the project was officially closed, the backend infrastructure was removed. Currently serves as a Frontend Showcase featuring multi-language support (EN/TR/RU), dynamic slide-out cart, interactive reservation wizard, and responsive design. Built with HTML5, CSS3, Vanilla JavaScript and Vite.</p>
+              <div class="card-technologies">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Vite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 - DigitDraw -->
+          <div
+            class="project-card-modern"
+            onclick="window.open('https://github.com/fironihabib/digitdraw', '_blank')"
+          >
+            <div class="card-image-wrapper card-image-terminal">
+              <div class="terminal-visual">
+                <div class="terminal-bar">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <span class="terminal-title">digitdraw.dsl</span>
+                </div>
+                <div class="terminal-code">
+                  <span class="code-keyword">fonk</span> <span class="code-func">main</span>() {<br/>
+                  &nbsp;&nbsp;<span class="code-keyword">eger</span> tus_basildi <span class="code-keyword">ise</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-func">daire_ciz</span>(<span class="code-num">150</span>, <span class="code-num">200</span>, <span class="code-num">50</span>)<br/>
+                  &nbsp;&nbsp;<span class="code-keyword">aksi</span><br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-func">dikdortgen_ciz</span>(<span class="code-num">0</span>,<span class="code-num">0</span>,<span class="code-num">100</span>,<span class="code-num">80</span>)<br/>
+                  &nbsp;&nbsp;<span class="code-keyword">dondur</span> <span class="code-num">0</span><br/>
+                  }
+                </div>
+              </div>
+              <div class="card-image-overlay"></div>
+              <div class="card-status">
+                <span class="status-badge status-completed" data-translate="work.completed">Completed</span>
+                <span class="card-year">2025</span>
+              </div>
+              <div class="card-hover-action">
+                <i class="fab fa-github"></i>
+                <span data-translate="work.viewGithub">View on GitHub</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">DigitDraw DSL</h3>
+              <p class="card-description" data-translate="work.digitdrawDesc">Developed as part of the Programming Languages curriculum, DigitDraw is a custom Domain-Specific Language (DSL) designed for graphical programming and algorithmic logic. Features a complete compiler frontend with Lexical Analyzer (Flex) and Syntax Parser (Bison/Yacc), supporting control flow (if/then/else, while, for-to loops), modular programming with functions, list data structures, and specialized graphics commands for geometric rendering and real-time keyboard event handling.</p>
+              <div class="card-technologies">
+                <span>C</span>
+                <span>Flex</span>
+                <span>Bison</span>
+                <span>Compiler Theory</span>
+                <span>Linux/GCC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 - MyHomeTeck -->
+          <div
+            class="project-card-modern"
+            onclick="window.open('https://www.myhometeck.com', '_blank')"
+          >
+            <div class="card-image-wrapper">
+              <img
+                src="images/myhometeck.PNG"
+                alt="MyHomeTeck"
+              />
+              <div class="card-image-overlay"></div>
+              <div class="card-status">
+                <span class="status-badge status-dev" data-translate="work.inDevelopment">In Development</span>
+                <span class="card-year">2024</span>
+              </div>
+              <div class="card-hover-action">
+                <i class="fas fa-external-link-alt"></i>
+                <span data-translate="work.visitWebsite">Visit Website</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">MyHomeTeck</h3>
+              <p class="card-description" data-translate="work.myhometeckDesc">MyHomeTeck is a comprehensive Property and Tenant Management Platform developed for the Turkish market. It aims to simplify operations between landlords, tenants, and managers by digitizing rental processes. In the future, it will be available not only for residential complexes and apartments, but also for hotels, shopping malls, management companies, facilities, and offices. A mobile application will also be launched alongside the web platform.</p>
+              <div class="card-technologies">
+                <span>Next.js 15</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>FastAPI</span>
+                <span>SQLAlchemy</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 - Bihair App -->
+          <div class="project-card-modern">
+            <div class="card-image-wrapper">
+              <img
+                src="images/bihair.jpg"
+                alt="Bihair App"
+              />
+              <div class="card-image-overlay"></div>
+              <div class="card-status">
+                <span class="status-badge status-dev" data-translate="work.inDevelopment">In Development</span>
+                <span class="card-year">2026</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bihair App</h3>
+              <p class="card-description" data-translate="work.bihairDesc">Bihair App is a reservation application for barbershops, beauty salons, tattoo and piercing studios. Currently in active development, it will soon be available on App Store and Google Play. The app aims to simplify booking processes for both customers and business owners in the beauty and grooming industry.</p>
+              <div class="card-technologies">
+                <span>Flutter</span>
+                <span>Dart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="contact-page">
+      <!-- Header Navigation -->
+      <header class="contact-header">
+        <div class="nav-container">
+          <div class="logo">
+            <img src="images/logo.png" alt="Logo" class="logo-image" />
+          </div>
+          <nav class="main-nav">
+            <a href="#" class="nav-link" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="about">About me</a>
+            <a href="#" class="nav-link" data-page="work">Work</a>
+            <a href="#" class="nav-link active" data-page="contact">Contact</a>
+          </nav>
+          <div class="language-selector">
+            <div class="language-dropdown">
+              <div class="selected-language">
+                <img
+                  src="https://flagcdn.com/w20/gb.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                <span class="language-text">EN</span>
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+              </div>
+              <div class="language-options">
+                <div class="language-option" data-lang="en">
+                  <img
+                    src="https://flagcdn.com/w20/gb.png"
+                    alt="English"
+                    class="flag-icon"
+                  />
+                  <span>English</span>
+                </div>
+                <div class="language-option" data-lang="az">
+                  <img
+                    src="https://flagcdn.com/w20/az.png"
+                    alt="Azerbaycan"
+                    class="flag-icon"
+                  />
+                  <span>Azərbaycan</span>
+                </div>
+                <div class="language-option" data-lang="tr">
+                  <img
+                    src="https://flagcdn.com/w20/tr.png"
+                    alt="Türkçe"
+                    class="flag-icon"
+                  />
+                  <span>Türkçe</span>
+                </div>
+                <div class="language-option" data-lang="ru">
+                  <img
+                    src="https://flagcdn.com/w20/ru.png"
+                    alt="Русский"
+                    class="flag-icon"
+                  />
+                  <span>Русский</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Contact Content -->
+      <div class="contact-content">
+        <!-- Default Contact View -->
+        <div class="contact-default-view">
+          <h1 class="contact-title">Contact</h1>
+          <p class="contact-subtitle">
+            Let's connect and bring your ideas to life together.
+          </p>
+
+          <!-- Get In Touch Button (Below Subtitle) -->
+          <div class="get-in-touch-section">
+            <button class="get-in-touch-btn" onclick="showContactForm()">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </button>
+          </div>
+
+          <!-- Contact Character Section (Centered) -->
+          <div class="contact-character-section">
+            <div class="contact-character-container">
+              <img
+                src="images/contact.png"
+                alt="Contact Character"
+                class="contact-character"
+                loading="eager"
+                style="
+                  display: block !important;
+                  opacity: 1 !important;
+                  visibility: visible !important;
+                  width: 100% !important;
+                  height: 100% !important;
+                "
+                onload="console.log('Contact image loaded successfully'); this.style.opacity='1';"
+                onerror="console.error('Contact image failed to load:', this.src); this.style.display='block'; this.style.background='red'; this.style.width='400px'; this.style.height='400px';"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form View (Hidden by default) -->
+        <div class="contact-form-view" style="display: none">
+          <h1 class="contact-title">Get In Touch</h1>
+          <p class="contact-subtitle">
+            If you'd like to work together or learn more about what I do, feel
+            free to reach out. I'm happy to connect and discuss further.
+          </p>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-fields-container">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Please enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="mobile">Mobile</label>
+                <div class="phone-input-wrapper">
+                  <select
+                    id="countryCode"
+                    name="countryCode"
+                    class="country-code-dropdown"
+                  >
+                    <option value="+93">🇦🇫 +93</option>
+                    <option value="+355">🇦🇱 +355</option>
+                    <option value="+213">🇩🇿 +213</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+376">🇦🇩 +376</option>
+                    <option value="+244">🇦🇴 +244</option>
+                    <option value="+54">🇦🇷 +54</option>
+                    <option value="+374">🇦🇲 +374</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="+43">🇦🇹 +43</option>
+                    <option value="+994" selected>🇦🇿 +994</option>
+                    <option value="+973">🇧🇭 +973</option>
+                    <option value="+880">🇧🇩 +880</option>
+                    <option value="+375">🇧🇾 +375</option>
+                    <option value="+32">🇧🇪 +32</option>
+                    <option value="+229">🇧🇯 +229</option>
+                    <option value="+591">🇧🇴 +591</option>
+                    <option value="+387">🇧🇦 +387</option>
+                    <option value="+55">🇧🇷 +55</option>
+                    <option value="+359">🇧🇬 +359</option>
+                    <option value="+1">🇨🇦 +1</option>
+                    <option value="+56">🇨🇱 +56</option>
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+57">🇨🇴 +57</option>
+                    <option value="+385">🇭🇷 +385</option>
+                    <option value="+357">🇨🇾 +357</option>
+                    <option value="+420">🇨🇿 +420</option>
+                    <option value="+45">🇩🇰 +45</option>
+                    <option value="+593">🇪🇨 +593</option>
+                    <option value="+20">🇪🇬 +20</option>
+                    <option value="+372">🇪🇪 +372</option>
+                    <option value="+358">🇫🇮 +358</option>
+                    <option value="+33">🇫🇷 +33</option>
+                    <option value="+995">🇬🇪 +995</option>
+                    <option value="+49">🇩🇪 +49</option>
+                    <option value="+30">🇬🇷 +30</option>
+                    <option value="+36">🇭🇺 +36</option>
+                    <option value="+354">🇮🇸 +354</option>
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+62">🇮🇩 +62</option>
+                    <option value="+98">🇮🇷 +98</option>
+                    <option value="+964">🇮🇶 +964</option>
+                    <option value="+353">🇮🇪 +353</option>
+                    <option value="+972">🇮🇱 +972</option>
+                    <option value="+39">🇮🇹 +39</option>
+                    <option value="+81">🇯🇵 +81</option>
+                    <option value="+962">🇯🇴 +962</option>
+                    <option value="+7">🇰🇿 +7</option>
+                    <option value="+254">🇰🇪 +254</option>
+                    <option value="+965">🇰🇼 +965</option>
+                    <option value="+996">🇰🇬 +996</option>
+                    <option value="+371">🇱🇻 +371</option>
+                    <option value="+961">🇱🇧 +961</option>
+                    <option value="+370">🇱🇹 +370</option>
+                    <option value="+352">🇱🇺 +352</option>
+                    <option value="+60">🇲🇾 +60</option>
+                    <option value="+52">🇲🇽 +52</option>
+                    <option value="+373">🇲🇩 +373</option>
+                    <option value="+212">🇲🇦 +212</option>
+                    <option value="+31">🇳🇱 +31</option>
+                    <option value="+64">🇳🇿 +64</option>
+                    <option value="+47">🇳🇴 +47</option>
+                    <option value="+968">🇴🇲 +968</option>
+                    <option value="+92">🇵🇰 +92</option>
+                    <option value="+51">🇵🇪 +51</option>
+                    <option value="+63">🇵🇭 +63</option>
+                    <option value="+48">🇵🇱 +48</option>
+                    <option value="+351">🇵🇹 +351</option>
+                    <option value="+974">🇶🇦 +974</option>
+                    <option value="+40">🇷🇴 +40</option>
+                    <option value="+7">🇷🇺 +7</option>
+                    <option value="+966">🇸🇦 +966</option>
+                    <option value="+381">🇷🇸 +381</option>
+                    <option value="+65">🇸🇬 +65</option>
+                    <option value="+421">🇸🇰 +421</option>
+                    <option value="+386">🇸🇮 +386</option>
+                    <option value="+27">🇿🇦 +27</option>
+                    <option value="+82">🇰🇷 +82</option>
+                    <option value="+34">🇪🇸 +34</option>
+                    <option value="+94">🇱🇰 +94</option>
+                    <option value="+46">🇸🇪 +46</option>
+                    <option value="+41">🇨🇭 +41</option>
+                    <option value="+963">🇸🇾 +963</option>
+                    <option value="+886">🇹🇼 +886</option>
+                    <option value="+992">🇹🇯 +992</option>
+                    <option value="+66">🇹🇭 +66</option>
+                    <option value="+90">🇹🇷 +90</option>
+                    <option value="+993">🇹🇲 +993</option>
+                    <option value="+380">🇺🇦 +380</option>
+                    <option value="+971">🇦🇪 +971</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+598">🇺🇾 +598</option>
+                    <option value="+998">🇺🇿 +998</option>
+                    <option value="+58">🇻🇪 +58</option>
+                    <option value="+84">🇻🇳 +84</option>
+                  </select>
+                  <input type="tel" id="mobile" name="mobile" placeholder="" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-buttons-container">
+              <button type="submit" class="submit-btn">
+                Submit
+                <i class="fas fa-arrow-right"></i>
+              </button>
+
+              <button
+                type="button"
+                class="back-btn"
+                onclick="showContactDefault()"
+              >
+                <i class="fas fa-arrow-left"></i>
+                Back
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Thank You View (Hidden by default) -->
+        <div class="contact-thank-you-view" style="display: none">
+          <h1 class="thank-you-title">Thank You!</h1>
+
+          <button class="back-to-contact-btn" onclick="showHomePage()">
+            <i class="fas fa-arrow-left"></i>
+            Back to Contact
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Translation System -->
+    <script src="js/translations.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
